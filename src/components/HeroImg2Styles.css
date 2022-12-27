@@ -1,0 +1,47 @@
+.hero-img {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 60vh;
+  position: relative;
+}
+
+.heading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img ::before {
+  content: "";
+  background: url("https://images.pexels.com/photos/4974920/pexels-photo-4974920.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-position: start;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-img h1 {
+  font-size: 2.4rem;
+}
+.hero-img p {
+  margin-top: -10px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .hero-img h1 {
+    font-size: 2rem;
+  }
+  .hero-img p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
